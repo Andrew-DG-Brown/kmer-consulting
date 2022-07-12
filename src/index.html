@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>KMER Consulting</title>
+  </head>
+  <body>
+    <main class="bg-veryLightBlue flex flex-col" id="home">
+      <nav class="relative container mx-auto p-6 bg-white">
+        <!-- flex container  -->
+        <div class="flex justify-between items-center px-5 md:px-20">
+          <img
+            src="/images/Nav/logo.png"
+            alt="KMER logo"
+            class="h-7 cursor-pointer"
+            href="#home"
+          />
+          <!-- menu container  -->
+          <div
+            class="hidden lg:flex space-x-1 md:space-x-28 text-lg font-semibold"
+          >
+            <a href="#home" class="hover:text-mainOrange">Home</a>
+            <a href="#about" class="hover:text-mainOrange">About</a>
+            <a href="#services" class="hover:text-mainOrange">Services</a>
+          </div>
+          <a
+            href="#contact"
+            class="cursor-pointer hidden lg:flex items-center px-6 py-4 font-bold text-sm text-veryDarkBlue bg-mainOrange"
+          >
+            Book Consultation
+            <img
+              src="/images/arrow-forward-outline.svg"
+              alt=""
+              class="w-4 ml-3 mt-0.5"
+            />
+          </a>
+        </div>
+      </nav>
+      <section class="container mx-auto flex flex-col" id="hero">
+        <div
+          class="container flex flex-col-reverse md:flex-row items-center md:text-5xl md:text-left px-10 mx-auto my-32"
+        >
+          <!-- left side -->
+          <div
+            class="text-veryDarkBlue text-center md:text-left flex flex-col space-y-8 w-[80%] lg:w-full mt-10 md:mt-0"
+          >
+            <h1 class="max-w-4xl text-4xl font-bold lg:text-7xl">
+              KMER Consulting
+            </h1>
+            <p class="text-base lg:text-lg max-w-xl text-center md:text-left">
+              Making your FPGA development, integration and validation as
+              seamless as possible. KMER Consulting's FPGA expertise enables
+              your company to continuously achieve project milestones.
+            </p>
+            <!-- buttons -->
+            <div class="flex justify-center md:justify-start space-x-5">
+              <a
+                href="#contact"
+                class="flex items-center px-6 py-4 font-bold text-sm text-veryDarkBlue bg-mainOrange"
+              >
+                Contact
+                <img
+                  src="/images/arrow-forward-outline.svg"
+                  alt=""
+                  class="w-4 ml-3 mt-0.5"
+                />
+              </a>
+              <a
+                href="#about"
+                class="flex items-center px-6 font-bold py-1 text-sm text-white bg-veryDarkBlue"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+          <!-- right side -->
+          <div
+            class="container relative flex justify-center items-center flex-col"
+          >
+            <!-- orange circle  -->
+            <div
+              class="bg-mainOrange w-32 h-32 rounded-full absolute top-0 left-8 lg:left-20 lg:bottom-[24rem]"
+              id="top-circle"
+            ></div>
+            <!-- hero image  -->
+            <img
+              src="/images/hero.jpg"
+              alt="photo of Cristi from KMER Consulting"
+              class="max-h-80 lg:max-h-120 rounded-full drop-shadow-xl z-10"
+            />
+            <!-- blue circle  -->
+            <div
+              class="bg-veryDarkBlue w-24 h-24 rounded-full absolute translate-x-24 md:translate-x-44 translate-y-28 md:translate-y-44"
+              id="bot-circle"
+            ></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- ======================= About ======================  -->
+    <section class="flex w-full py-16 md:py-40" id="about">
+      <!-- content container -->
+      <div
+        class="mx-auto flex flex-col justify-center md:flex-row text-veryDarkBlue"
+      >
+        <!-- hidden heading  -->
+        <div class="flex justify-center">
+          <p
+            class="inline-block border-b-[3px] md:hidden px-4 text-3xl border-mainOrange font-semibold max-w-xl text-center md:text-left mb-16"
+          >
+            About KMER
+          </p>
+        </div>
+        <!-- left side  -->
+        <div class="relative lg:mr-60 h-[580px]">
+          <img class="w-96 lg:w-96" src="/images/About/image-1.jpg" alt="" />
+          <img
+            class="lg:w-[50rem] absolute left-52 md:left-44 top-72"
+            src="/images/About/image-2.jpg"
+            alt=""
+          />
+        </div>
+        <!-- right side  -->
+        <div class="my-auto">
+          <p
+            class="hidden md:block border-l-[3px] border-mainOrange pl-4 text-base font-semibold max-w-xl text-center md:text-left"
+          >
+            About KMER
+          </p>
+          <!-- indented  -->
+          <div class="ml-5">
+            <h2
+              class="text-2xl text-center md:text-left font-bold md:text-3xl lg:text-5xl py-5"
+            >
+              Providing Custom<br class="hidden md:block" />
+              FPGA Consulting
+            </h2>
+            <h4 class="text-lg font-base max-w-xl text-center md:text-left">
+              FPGA solutions for your company's technical challenges. KMER
+              Consulting provides the right services for your hardware needs.
+            </h4>
+            <!-- Bullet points  -->
+            <div class="mt-10">
+              <!-- point 1  -->
+              <div class="flex py-4">
+                <ion-icon
+                  id="check-mark"
+                  name="checkmark-outline"
+                  class="bg-mainOrange px-1 w-6"
+                  size="large"
+                ></ion-icon>
+                <p class="ml-5">
+                  Develop new designs from defined specifications or ideas
+                </p>
+              </div>
+              <!-- point 2  -->
+              <div class="flex py-4">
+                <ion-icon
+                  id="check-mark"
+                  name="checkmark-outline"
+                  class="bg-mainOrange px-1 w-6"
+                  size="large"
+                ></ion-icon>
+                <p class="ml-5">Solve issues with your existing design</p>
+              </div>
+              <!-- point 3  -->
+              <div class="flex py-4">
+                <ion-icon
+                  id="check-mark"
+                  name="checkmark-outline"
+                  class="bg-mainOrange px-1 w-6"
+                  size="large"
+                ></ion-icon>
+                <p class="ml-5">
+                  Assist with verification and validation using automation and
+                  scripts
+                </p>
+              </div>
+              <!-- point 4  -->
+              <div class="flex py-4">
+                <ion-icon
+                  id="check-mark"
+                  name="checkmark-outline"
+                  class="bg-mainOrange px-1 w-6"
+                  size="large"
+                ></ion-icon>
+                <p class="ml-5">
+                  Convert designs from a target FPGA to another family or vendor
+                  FPGA
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========================== About End ======================= -->
+
+    <!-- ================================ Services ========================= -->
+    <section
+      id="services"
+      class="relative flex flex-col justify-center w-full bg-veryDarkBlue pb-28 overflow-hidden"
+    >
+      <!-- inner content container  -->
+      <div class="flex flex-col justify-center items-center">
+        <!-- top text  -->
+        <div class="flex flex-col justify-center my-16">
+          <p class="text-mainOrange text-center font-semibold text-xl">
+            Services
+          </p>
+          <h2 class="text-white text-center text-5xl md:text-7xl font-bold">
+            How It Works
+          </h2>
+        </div>
+        <!-- 3 services comtainer  -->
+        <div
+          class="flex flex-col lg:flex-row space-x-0 lg:space-x-10 xl:space-x-32 w-full justify-center items-center lg:items-start"
+        >
+          <!-- New service 1  -->
+          <div class="flex flex-col p-10 bg-white w-[30rem]">
+            <h2 class="text-2xl font-bold md:text-3xl lg:text-5xl z-50 mb-8">
+              New FPGA Designs
+            </h2>
+            <p class="text-lightGrey">
+              Start from design dpecifications or help the client define them.
+            </p>
+            <!-- Bullet points -->
+            <div>
+              <div class="mt-10">
+                <!-- point 1  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">Assistance with FPGA device selection</p>
+                </div>
+                <!-- point 2  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">Modeling and proof of concept (Matlab)</p>
+                </div>
+                <!-- point 3  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">Architecture definition</p>
+                </div>
+                <!-- point 4  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-10"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">
+                    Design partitioning (find the most effective split between
+                    FPGA and Software tasks)
+                  </p>
+                </div>
+                <!-- point 5  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">Assistance with FPGA pin selection</p>
+                </div>
+                <!-- point 6  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-7"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">
+                    Register definition/implementation for software control
+                  </p>
+                </div>
+                <!-- point 7  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">
+                    RTL implementation (VHDL, Verilog, System Verilog)
+                  </p>
+                </div>
+                <!-- point 8  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">Create test plans and testbenches</p>
+                </div>
+                <!-- point 9  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">Assist with lab verification and debugging</p>
+                </div>
+                <!-- point 10  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">
+                    Assist with FPGA programming (in-field upgrades)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- New service 2 -->
+          <div class="flex flex-col p-10 bg-white w-[30rem] z-50">
+            <h2 class="text-2xl font-bold md:text-3xl lg:text-5xl mb-8">
+              Existing FPGA Designs
+            </h2>
+            <p class="text-lightGrey">
+              Develop new features and integrate them into an existing design.
+            </p>
+            <!-- Bullet points -->
+            <div>
+              <div class="mt-10">
+                <!-- point 1  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">
+                    Integrate third party IP into existing designs
+                  </p>
+                </div>
+                <!-- point 2  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">Trace and correct bugs in existing designs</p>
+                </div>
+                <!-- point 3  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">Assist with timing closure</p>
+                </div>
+                <!-- point 4  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-7"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">
+                    Evaluate and recommend correct clock domain crossing
+                  </p>
+                </div>
+                <!-- point 5  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">Create test plans and testbenches</p>
+                </div>
+                <!-- point 6  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">Assist with lab verification and debugging</p>
+                </div>
+                <!-- point 7  -->
+                <div class="flex py-4">
+                  <ion-icon
+                    id="check-mark"
+                    name="checkmark-outline"
+                    class="px-1 w-6"
+                    size="large"
+                  ></ion-icon>
+                  <p class="ml-5">
+                    Assist with FPGA programming (in-field upgrades)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- service 1 (hidden)  -->
+          <div class="hidden relative flex flex-col w-80 space-y-6">
+            <!-- img with number  -->
+            <div class="flex flex-col items-center">
+              <p
+                class="absolute left-14 inline-block text-lg font-semibold bg-mainOrange py-2 px-3 text-center"
+              >
+                01
+              </p>
+              <img
+                src="/images/services/1.jpg"
+                alt=""
+                class="rounded-full w-60 mb-5"
+              />
+            </div>
+            <h3 class="text-center text-white text-3xl font-bold">
+              Firmware Design
+            </h3>
+            <p class="text-lightGrey text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              porro obcaecati sit rem qui fugit ut dolore voluptates, non
+              deleniti dolorum necessitatibus cupiditate ex.
+            </p>
+          </div>
+          <!-- service 2 (hidden) -->
+          <div class="hidden flex flex-col justify-center w-80 space-y-6">
+            <!-- img with number  -->
+            <div class="relative flex flex-col items-center mt-10 md:mt-0">
+              <p
+                class="absolute left-14 inline-block text-lg font-semibold bg-mainOrange py-2 px-3 text-center"
+              >
+                02
+              </p>
+              <img
+                src="/images/services/2.jpg"
+                alt=""
+                class="rounded-full w-60 mb-5"
+              />
+            </div>
+            <h3 class="text-center text-white text-3xl font-bold">
+              FPGA Design
+            </h3>
+            <p class="text-lightGrey text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              porro obcaecati sit rem qui fugit ut dolore voluptates, non
+              deleniti dolorum necessitatibus cupiditate ex.
+            </p>
+          </div>
+          <!-- service 3 (hidden) -->
+          <div class="relative hidden flex flex-col w-80 space-y-6">
+            <!-- img with number  -->
+            <div class="flex flex-col items-center mt-10 md:mt-0">
+              <p
+                class="absolute left-14 inline-block text-lg font-semibold bg-mainOrange py-2 px-3 text-center"
+              >
+                03
+              </p>
+              <img
+                src="/images/services/3.jpg"
+                alt=""
+                class="rounded-full w-60 mb-5"
+              />
+            </div>
+            <h3 class="text-center text-white text-3xl font-bold">
+              Testing Support
+            </h3>
+            <p class="text-lightGrey text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              porro obcaecati sit rem qui fugit ut dolore voluptates, non
+              deleniti dolorum necessitatibus cupiditate ex.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- background shapes  -->
+      <!-- orange circle - Bottom left  -->
+      <div
+        class="absolute hidden xl:block bg-mainOrange w-44 h-44 rounded-full top-[44rem] left-10"
+        id="top-circle"
+      ></div>
+      <!-- orange circle - Top Right  -->
+      <div
+        class="absolute hidden lg:block bg-mainOrange w-96 h-96 rounded-full bottom-[40rem] -right-10"
+        id="top-circle"
+      ></div>
+      <!-- white circle - Top Right  -->
+      <div
+        class="absolute hidden lg:block bg-transparent border-2 border-white w-96 h-96 rounded-full bottom-[40rem] -right-32"
+        id="top-circle"
+      ></div>
+      <!-- pale circle - Top left  -->
+      <div
+        class="absolute hidden lg:block bg-transparent opacity-5 border-2 border-white w-96 h-96 rounded-full bottom-[30rem] -left-48"
+        id="top-circle"
+      ></div>
+    </section>
+    <!-- ========================== Sercies End ========================== -->
+
+    <!-- =============================== Contact =============================== -->
+    <section id="contact" class="flex justify-center items-center">
+      <!-- Contact container -->
+      <div class="flex flex-col xl:flex-row justify-center my-32 xl:space-x-20">
+        <!-- left side  -->
+        <div class="flex flex-col text-center xl:text-left">
+          <p class="text-base font-semibold max-w-xl">Get In Touch</p>
+          <h2 class="text-xl font-bold md:text-3xl lg:text-5xl py-5">
+            Any Project You Have<br class="hidden md:block" />
+            In Mind, Let Us Know.
+          </h2>
+          <h4 class="font-semibold max-w-xl">
+            Engineering solutions for today's technical challenges and for
+            tomorrow's market reality. KMER Consulting provides the right
+            services for your hardware needs.
+          </h4>
+          <p class="hidden font-base max-w-lg my-5">
+            Engineering solutions for today's technical challenges and for
+            tomorrow's market reality. KMER Consulting provides the right
+            services for your hardware needs.
+          </p>
+        </div>
+        <!-- right side  -->
+        <div class="flex flex-col w-120 py-10 mx-auto shadow-lg">
+          <form
+            action="https://formsubmit.co/your@email.com"
+            method="POST"
+            class="flex flex-col items-center"
+          >
+            <!-- name  -->
+            <label for="name"></label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Enter your name"
+              class="flex items-center placeholder:text-veryDarkBlue placeholder:text-sm bg-veryLightBlue text-black py-4 px-6 mb-3 w-[75%]"
+            />
+            <!-- email  -->
+            <label for="email"></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Enter your email"
+              class="flex items-center placeholder:text-veryDarkBlue placeholder:text-sm bg-veryLightBlue text-black py-4 px-6 mb-3 w-[75%]"
+            />
+            <!-- message -->
+            <label for="message"></label>
+            <textarea
+              cols="30"
+              rows="10"
+              type="text"
+              id="message"
+              name="message"
+              required
+              placeholder="Enter your message"
+              class="placeholder:text-veryDarkBlue placeholder:text-sm bg-veryLightBlue text-black py-4 px-6 mb-3 w-[75%] h-32"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="flex mt-5 w-28 items-center px-6 py-4 font-bold text-sm text-veryDarkBlue bg-mainOrange"
+            >
+              Send
+              <img
+                src="/images/arrow-forward-outline.svg"
+                alt=""
+                class="w-4 ml-3 mt-0.5"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- IONICON  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- Script  -->
+    <script src="./index.js"></script>
+  </body>
+</html>
