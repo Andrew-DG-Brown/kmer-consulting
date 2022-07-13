@@ -6,3 +6,14 @@
 //     });
 //   });
 // });
+
+const removeRepeat = (string) => {
+  let finalString = "";
+
+  for (let i = 0; i < string.length; i++) {
+    if (!finalString.includes(string[i])) {
+      finalString += string[i];
+    }
+  }
+  return finalString;
+};

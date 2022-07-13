@@ -11,7 +11,9 @@
     <main class="bg-veryLightBlue flex flex-col" id="home">
       <nav class="relative container mx-auto p-6 bg-white">
         <!-- flex container  -->
-        <div class="flex justify-between items-center px-5 md:px-20">
+        <div
+          class="flex justify-center lg:justify-between items-center px-5 md:px-20"
+        >
           <img
             src="/images/Nav/logo.png"
             alt="KMER logo"
@@ -104,7 +106,7 @@
     <section class="flex w-full py-16 md:py-40 overflow-hidden" id="about">
       <!-- content container -->
       <div
-        class="mx-auto flex flex-col justify-center md:flex-row text-veryDarkBlue"
+        class="mx-auto flex flex-col justify-center lg:flex-row text-veryDarkBlue"
       >
         <!-- hidden heading  -->
         <div class="flex justify-center">
@@ -115,10 +117,10 @@
           </p>
         </div>
         <!-- left side  -->
-        <div class="relative lg:mr-60 h-[580px]">
+        <div class="relative lg:mr-60 h-[480px]">
           <img class="w-96 lg:w-96" src="/images/About/image-1.jpg" alt="" />
           <img
-            class="lg:w-[50rem] absolute left-52 md:left-44 top-72"
+            class="w-96 lg:w-96 mt-12 ml-48"
             src="/images/About/image-2.jpg"
             alt=""
           />
@@ -131,7 +133,7 @@
             About KMER
           </p>
           <!-- indented  -->
-          <div class="ml-5">
+          <div class="xl:ml-5">
             <h2
               class="text-2xl text-center md:text-left font-bold md:text-3xl lg:text-5xl py-5"
             >
@@ -143,7 +145,7 @@
               Consulting provides the right services for your hardware needs.
             </h4>
             <!-- Bullet points  -->
-            <div class="mt-10">
+            <div class="mt-10 mx-5 lg:mx-0">
               <!-- point 1  -->
               <div class="flex py-4">
                 <ion-icon
@@ -171,7 +173,7 @@
                 <ion-icon
                   id="check-mark"
                   name="checkmark-outline"
-                  class="bg-mainOrange px-1 w-6"
+                  class="bg-mainOrange px-1 w-7 md:w-6"
                   size="large"
                 ></ion-icon>
                 <p class="ml-5">
@@ -184,7 +186,7 @@
                 <ion-icon
                   id="check-mark"
                   name="checkmark-outline"
-                  class="bg-mainOrange px-1 w-6"
+                  class="bg-mainOrange px-1 w-7 md:w-6"
                   size="large"
                 ></ion-icon>
                 <p class="ml-5">
@@ -220,7 +222,7 @@
           class="flex flex-col lg:flex-row space-x-0 lg:space-x-10 xl:space-x-32 w-full justify-center items-center lg:items-start"
         >
           <!-- New service 1  -->
-          <div class="flex flex-col p-10 bg-white w-[30rem]">
+          <div class="flex flex-col p-10 bg-white sm:w-[30rem]">
             <h2 class="text-2xl font-bold md:text-3xl lg:text-5xl z-50 mb-8">
               New FPGA Designs
             </h2>
@@ -344,7 +346,7 @@
           </div>
 
           <!-- New service 2 -->
-          <div class="flex flex-col p-10 bg-white w-[30rem] z-50">
+          <div class="flex flex-col p-10 bg-white sm:w-[30rem] z-50">
             <h2 class="text-2xl font-bold md:text-3xl lg:text-5xl mb-8">
               Existing FPGA Designs
             </h2>
@@ -533,11 +535,13 @@
     <!-- ========================== Sercies End ========================== -->
 
     <!-- =============================== Contact =============================== -->
-    <section id="contact" class="flex justify-center items-center">
+    <section id="contact" class="justify-center items-center">
       <!-- Contact container -->
       <div class="flex flex-col xl:flex-row justify-center my-32 xl:space-x-20">
         <!-- left side  -->
-        <div class="flex flex-col text-center xl:text-left">
+        <div
+          class="flex flex-col items-center xl:items-start text-center xl:text-left"
+        >
           <p class="text-base font-semibold max-w-xl">Get In Touch</p>
           <h2 class="text-xl font-bold md:text-3xl lg:text-5xl py-5">
             Any Project You Have<br class="hidden md:block" />
@@ -555,7 +559,7 @@
           </p>
         </div>
         <!-- right side  -->
-        <div class="flex flex-col w-120 py-10 mx-auto shadow-lg">
+        <div class="flex flex-col w-[90%] lg:w-120 py-10 mx-auto shadow-lg">
           <form
             action="https://formsubmit.co/your@email.com"
             method="POST"
@@ -619,6 +623,6 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <!-- Script  -->
-    <script src="./index.js"></script>
+    <script src="./src/index.js"></script>
   </body>
 </html>
